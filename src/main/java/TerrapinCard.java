@@ -33,6 +33,11 @@ public class TerrapinCard {
      }else if (amount>0){
      balance+=amount;
    }
+//getter method
+   getBalance(){
+     return balance;
+   }
+
   }
 
   public String toString() {
