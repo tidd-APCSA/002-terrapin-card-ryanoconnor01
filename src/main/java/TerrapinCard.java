@@ -10,14 +10,14 @@ public class TerrapinCard {
 
   public void payEconomical() {
 // write code here
-    if (balance > 2.5) {
+    if (balance >= 2.5) {
       balance = balance - 2.5;
     }
   }
 
   public void payGourmet() {
   // write code here
-   if (balance > 4.0) {
+   if (balance >= 4.0) {
     balance = balance - 4.0;
    }
   }
@@ -28,17 +28,16 @@ public class TerrapinCard {
       //amount > 150 not balance>150 - but why???
     balance = 150;
     //this truncates it to 150 if only this method ran.
-   }else if (amount<0){
-     balance = balance;
-     }else if (amount>0){
-     balance+=amount;
+    }else if (amount<0){
+      balance = balance;
+     }else{
+      balance+=amount;
+     }
    }
 //getter method
    public double getBalance(){
-     return double balance;
+     return balance;
    }
-
-  }
 
   public String toString() {
   // write code here
