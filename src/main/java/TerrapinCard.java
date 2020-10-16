@@ -4,9 +4,7 @@ public class TerrapinCard {
   public TerrapinCard(double balance) {
   // write code here
     this.balance = balance;
-
   }
-
 
   public void payEconomical() {
 // write code here
