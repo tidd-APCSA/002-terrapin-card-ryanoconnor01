@@ -34,8 +34,8 @@ public class TerrapinCard {
      balance+=amount;
    }
 //getter method
-   getBalance(){
-     return balance;
+   public double getBalance(){
+     return double balance;
    }
 
   }
