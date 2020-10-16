@@ -2,10 +2,10 @@ public class CardRunner {
     public static void main(String args[]){
         // ☕
         // System.out.println("hey");
-        TerrapinCard card = new TerrapinCard(10);
-        System.out.println("Billy: " + card);
-        card.loadMoney(-15);
-        System.out.println("Billy: " + card);
+        // TerrapinCard card = new TerrapinCard(10);
+        // System.out.println("Billy: " + card);
+        // card.loadMoney(-15);
+        // System.out.println("Billy: " + card);
 
 
         TerrapinCard cardBilly = new TerrapinCard(20);
@@ -23,9 +23,6 @@ public class CardRunner {
         cardBrian.loadMoney(50);
         System.out.println("Billy: " + card);
         System.out.println("Brian: " + card);
-
-
-
 
     }
 }
