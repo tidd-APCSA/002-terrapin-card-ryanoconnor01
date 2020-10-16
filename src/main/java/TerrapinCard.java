@@ -8,15 +8,15 @@ public class TerrapinCard {
 
   public void payEconomical() {
 // write code here
-    if (balance >= 2.5) {
-      balance = balance - 2.5;
+    if (this.balance >= 2.5) {
+      this.balance = balance - 2.5;
     }
   }
 
   public void payGourmet() {
   // write code here
-   if (balance >= 4.0) {
-    balance = balance - 4.0;
+   if (this.balance >= 4.0) {
+    this.balance = balance - 4.0;
    }
   }
 
@@ -32,12 +32,12 @@ public class TerrapinCard {
    }
 //getter method
    public double getBalance(){
-     return balance;
+     return this.balance;
    }
 
   public String toString() {
   // write code here
-    return "The card has " + balance + " dollars";
+    return "The card has " + this.balance + " dollars";
   }
 
 }
