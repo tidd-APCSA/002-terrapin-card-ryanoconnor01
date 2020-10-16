@@ -3,16 +3,29 @@ public class CardRunner {
         // ☕
         // System.out.println("hey");
         TerrapinCard card = new TerrapinCard(10);
-        System.out.println(card);
+        System.out.println("Billy: " + card);
+        card.loadMoney(-15);
+        System.out.println("Billy: " + card);
 
-        card.loadMoney(15);
-        System.out.println(card);
 
-        card.loadMoney(10);
-        System.out.println(card);
+        TerrapinCard cardBilly = new TerrapinCard(20);
+        TerrapinCard cardBrian = new TerrapinCard(30);
+        cardBilly.payGourmet();
+        cardBrian.payEconomical();
+        System.out.println("Billy: " + card);
+        System.out.println("Brian: " + card);
+        cardBilly.loadMoney(20);
+        cardBrian.payGourmet();
+        System.out.println("Billy: " + card);
+        System.out.println("Brian: " + card);
+        cardBilly.payEconomical();
+        cardBilly.payEconomical();
+        cardBrian.loadMoney(50);
+        System.out.println("Billy: " + card);
+        System.out.println("Brian: " + card);
 
-        card.loadMoney(200);
-        System.out.println(card);
+
+
 
     }
 }
