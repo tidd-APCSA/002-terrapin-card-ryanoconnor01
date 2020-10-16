@@ -23,16 +23,14 @@ public class TerrapinCard {
   }
 
   public void loadMoney(double amount) {
-    //write code here
-    if (amount > 150) {
-      //amount > 150 not balance>150 - but why???
-    balance = 150;
-    //this truncates it to 150 if only this method ran.
-    }else if (amount<0){
+    if (amount > 150){
+      balance = 150;
+    }
+    if (amount < 0){
       balance = balance;
-     }else{
-      balance+=amount;
-     }
+    }else if((amount + balance) < 150){
+      balance += amount;
+    }
    }
 //getter method
    public double getBalance(){
