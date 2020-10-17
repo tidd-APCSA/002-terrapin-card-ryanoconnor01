@@ -30,6 +30,7 @@ public class TerrapinCard {
             this.balance += amount;
         }
    }
+   
 //getter method
    public double getBalance(){
      return this.balance;
