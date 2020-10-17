@@ -20,6 +20,7 @@ public class TerrapinCard {
    }
   }
 
+// fixed up your loadMoney method. Check it out. Run your tests and see what happens 👨‍💻
   public void loadMoney(double amount) {
         if(amount < 0){
             this.balance = this.balance;
